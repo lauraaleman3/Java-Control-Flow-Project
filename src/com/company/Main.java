@@ -22,13 +22,13 @@ public class Main {
                 int favQBNumber = 0;
 
                 System.out.println("What is the name of your favorite pet?");
-                String favPet = scanner.nextLine();
+                String favPet = scanner.next();
 
                 System.out.println("How old is your favorite pet?");
-                int petAge = Integer.parseInt(scanner.nextLine());
+                int petAge = Integer.parseInt(scanner.next());
 
                 System.out.println("What is your lucky number?");
-                int luckyNum = Integer.parseInt(scanner.nextLine());
+                int luckyNum = Integer.parseInt(scanner.next());
 
                 System.out.println("Do you have a favorite quarterback? (yes or no)");
                 String favQB = scanner.nextLine();
@@ -36,18 +36,18 @@ public class Main {
                 if (favQB.equalsIgnoreCase("yes") || (favQB.equalsIgnoreCase("y"))) {
 
                     System.out.println("What is his jersey number?");
-                    favQBNumber = Integer.parseInt(scanner.nextLine());
+                    favQBNumber = Integer.parseInt(scanner.next());
                 } else System.out.println("You must be a soccer fan!");
 
                 System.out.println("What is the two-digit model year of your car?");
-                int modelYear = Integer.parseInt(scanner.nextLine());
+                int modelYear = Integer.parseInt(scanner.next());
 
                 System.out.println("What is the name of your favorite actor/actress?");
-                String favAct = scanner.nextLine();
+                String favAct = scanner.next();
 
                 System.out.println("Enter a random number between 1 and 50.");
 
-                int randy = Integer.parseInt(scanner.nextLine());
+                int randy = Integer.parseInt(scanner.next());
                 Random rand = new Random();
 
                 int randomNum = rand.nextInt(65 - 1);
