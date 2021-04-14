@@ -13,47 +13,34 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is your name?");
-        String name = scanner.nextLine();
+        String name = scanner.next();
         System.out.printf("Hello %s", name);
         System.out.println("\nWould you like to continue to the interactive portion?");
-        String answer = scanner.nextLine();
+        String answer = scanner.next();
         if (answer.equalsIgnoreCase("yes") || (answer.equalsIgnoreCase("y"))) {
             do {
                 int favQBNumber = 0;
-
                 System.out.println("What is the name of your favorite pet?");
                 String favPet = scanner.next();
-
                 System.out.println("How old is your favorite pet?");
                 int petAge = Integer.parseInt(scanner.next());
-
                 System.out.println("What is your lucky number?");
                 int luckyNum = Integer.parseInt(scanner.next());
-
                 System.out.println("Do you have a favorite quarterback? (yes or no)");
-                String favQB = scanner.nextLine();
-
+                String favQB = scanner.next();
                 if (favQB.equalsIgnoreCase("yes") || (favQB.equalsIgnoreCase("y"))) {
-
                     System.out.println("What is his jersey number?");
                     favQBNumber = Integer.parseInt(scanner.next());
                 } else System.out.println("You must be a soccer fan!");
-
                 System.out.println("What is the two-digit model year of your car?");
                 int modelYear = Integer.parseInt(scanner.next());
-
                 System.out.println("What is the name of your favorite actor/actress?");
                 String favAct = scanner.next();
-
                 System.out.println("Enter a random number between 1 and 50.");
-
                 int randy = Integer.parseInt(scanner.next());
                 Random rand = new Random();
-
                 int randomNum = rand.nextInt(65 - 1);
-
                 int magicBall = 0;
-
                 if (favQBNumber == 0) {
                     magicBall = (randomNum * luckyNum);
                     while (magicBall > 75) {
@@ -70,7 +57,6 @@ public class Main {
                     lotNum1 -= 65;
                 }
                 int lotNum2 = 42;
-
                 int lotNum3 = (favQBNumber + petAge + luckyNum);
                 while (lotNum3 > 65) {
                     lotNum3 -= 65;
